@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Harshitsoni2000/Fylo-Dark-Theme-Landing-Page)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://harshitsoni2000.github.io/Fylo-Dark-Theme-Landing-Page/)
 
 ## My process
 
