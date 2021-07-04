@@ -1,0 +1,10 @@
+
+// Home Page
+
+.container {
+    padding: 2rem;
+    background: var(--primary-dark-2);
+    display: grid;
+    grid-template-rows: [header-start] min-content [header-end features-start] min-content [features-end description-start] min-content [description-end comments-start] min-content [comments-end signup-start] min-content [signup-end footer-start] min-content [footer-end];
+    grid-template-columns: [full-start] 1fr repeat(12, [col-start] minmax(min-content, 10rem) [col-end]) 1fr [full-end]; // 1200px/12 = 100px, ie. 10rem
+}

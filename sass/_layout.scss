@@ -1,0 +1,108 @@
+
+// Header
+
+.header {
+    grid-area: header-start / full-start / header-end / full-end;
+    background-color: var(--primary-dark-1);
+    background-image: url("../images/bg-curvy-desktop.svg");
+    @media only screen and (hover: none) and (max-width: 75em) {
+        background-image: url("../images/bg-curvy-mobile.svg");
+    };
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding: 2rem 0 6rem;
+    //Navigation Bar
+    .navigation {
+        &__logo {
+            max-height: 4rem;
+        }
+        display: flex;
+        justify-content: space-between;
+
+        &__links {
+            display: flex;
+            align-items: center;
+
+            .link {
+                &:not(:last-child) {
+                    padding-right: 2rem;
+                }
+            }
+        }
+    }
+
+    .intro {
+        display: grid;
+        grid-template: repeat(4, min-content) / 1fr minmax(35rem, 2.3fr) 1fr;
+        justify-items: center;
+        grid-row-gap: 4rem;
+        text-align: center;
+
+        & > * {
+            grid-column: 2 / 3;
+        }
+
+        .intro-img {
+            padding: 0;
+            max-width: 70rem;
+
+            .illustration-1 {
+                width: 100%;
+            }
+        }
+
+        .btn {
+            justify-self: center;
+            min-width: 20rem;
+        }
+    }
+}
+//Footer
+.footer {
+    grid-area: footer-start / full-start / footer-end / full-end;
+    background: var(--primary-dark-3);
+    padding: 25vh 0 2rem;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(30rem, 1fr));
+    grid-row-gap: 5rem;
+    @media (min-width: 33.3125em) {
+        justify-items: center;
+    }
+
+    &-logo {
+        grid-column: 1 / -1;
+        justify-self: start;
+    }
+
+    &__para {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+
+        .para-img {
+            margin-right: 2rem;
+        }
+    }
+
+    &__social {
+        justify-self: center;
+
+        & > * {
+            padding: 1rem;
+            border: 2px solid var(--color-white);
+            border-radius: 50%;
+            margin-right: 3rem;
+            transition: all 0.1s;
+
+            &:hover {
+                color: var(--color-accent-cyan);
+                border: 2px solid var(--color-accent-cyan);
+            }
+        }
+    }
+
+    .attribution {
+        grid-column: 1 / -1;
+    }
+}

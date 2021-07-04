@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.min.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navigation margin-bottom-4">
+                <img class="navigation__logo" src="images/logo.svg" alt="Fylo Logo">
+                <ul class="navigation__links list">
+                    <li class="link"><a class="link__item" href="#">Features</a></li>
+                    <li class="link"><a class="link__item" href="#">Team</a></li>
+                    <li class="link"><a class="link__item" href="#">Sign In</a></li>
+                </ul>
+            </nav>
+            <div class="intro">
+                <div class="intro-img">
+                    <img src="images/webp/illustration-intro.webp" alt="" class="illustration-1">
+                </div>
+                <h1 class="heading-1">All your files in one secure location, accessible anywhere.</h1>
+                <p class="para-primary">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+                <button class="btn btn-primary" type="submit">Get Started</button>
+            </div>
+        </header>
+        <div class="features">
+            <div>
+                <img src="images/icon-access-anywhere.svg" alt="">
+                <h2 class="heading-2">Access your files, anywhere</h2>
+                <p class="para-secondary">The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+            </div>
+            <div>
+                <img src="images/icon-security.svg" alt="">
+                <h2 class="heading-2">Security you can trust</h2>
+                <p class="para-secondary">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+            </div>
+            <div>
+                <img src="images/icon-collaboration.svg" alt="">
+                <h2 class="heading-2">Real-time collaboration</h2>
+                <p class="para-secondary">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+            </div>
+            <div>
+                <img src="images/icon-any-file.svg" alt="">
+                <h2 class="heading-2">Store any type of file</h2>
+                <p class="para-secondary">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+            </div>
+        </div>
+        <div class="description">
+            <img src="images/illustration-stay-productive.png" alt="" class="description__image">
+            <div class="description__content">
+                <h1 class="heading-1">Stay productive, wherever you are</h1>
+                <p class="para-primary">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+                <p class="para-primary">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+                <button class="btn btn-secondary">See how Fylo Works <span class="arrow">&rarr;</span></button>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="comment">
+                <img src="images/webp/bg-quotes.webp" alt="" class="comment-quote">
+                <p class="para-secondary margin-bottom-2">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                <div class="user">
+                    <img src="images/webp/profile-1.webp" alt="" class="user__image">
+                    <p class="para-secondary user__name">Satish Patel</p>
+                    <p class="para-tertiary user__post">Founder & CEO, Huddle</p>
+                </div>
+            </div>
+            <div class="comment">
+                <p class="para-secondary margin-bottom-2">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                <div class="user">
+                    <img src="images/webp/profile-2.webp" alt="" class="user__image">
+                    <p class="para-secondary user__name">Bruce McKenzie</p>
+                    <p class="para-tertiary user__post">Founder & CEO, Huddle</p>
+                </div>
+            </div>
+            <div class="comment">
+                <p class="para-secondary margin-bottom-2">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                <div class="user">
+                    <img src="images/webp/profile-3.webp" alt="" class="user__image">
+                    <p class="para-secondary user__name">Iva Boyd</p>
+                    <p class="para-tertiary user__post">Founder & CEO, Huddle</p>
+                </div>
+            </div>
+        </div>
+        <div class="signup">
+            <h2 class="signup__heading heading-2 margin-bottom-4">Get early access today</h2>
+            <p class="signup__para para-secondary margin-bottom-4">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+            <form class="signup__form" action="index.html" method="post">
+                <input class="email margin-bottom-4" type="email" placeholder="email@example.com" required>
+                <button class="btn btn-primary margin-bottom-4" type="submit" name="button">Get Started For Free</button>
+            </form>
+        </div>
+        <footer class="footer">
+            <img src="images/logo.svg" alt="" class="footer-logo">
+            <p class="footer__para para-primary"><img class="para-img" src="images/icon-location.svg" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div class="footer__contact">
+                <p class="footer__para para-secondary"><img class="para-img" src="images/icon-phone.svg" alt="">+1-543-123-4567</p>
+                <p class="footer__para para-secondary"><img class="para-img" src="images/icon-email.svg" alt="">example@fylo.com</p>
+            </div>
+            <div class="footer__list-1">
+                <ul class="list">
+                    <li class="link"><a class="link__item" href="#">About Us</a></li>
+                    <li class="link"><a class="link__item" href="#">Jobs</a></li>
+                    <li class="link"><a class="link__item" href="#">Press</a></li>
+                    <li class="link"><a class="link__item" href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__list-2">
+                <ul class="list">
+                    <li class="link"><a class="link__item" href="#">Contact Us</a></li>
+                    <li class="link"><a class="link__item" href="#">Terms</a></li>
+                    <li class="link"><a class="link__item" href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p class="attribution">
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+              Coded by <a href="#">Harshit Soni</a>.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
